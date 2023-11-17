@@ -4,13 +4,13 @@ description: Tutorial on how to set up a client to connect to Starknet with Gola
 
 # Setting up the Client
 
-Setting up the client in Golang is a fundamental step required for interacting with the Starknet blockchain. First import the `ethereum/go-ethereum` Ethereum package and initialize it by calling `DialContext` which accepts a provider URL.
+Setting up the client in Golang is a fundamental step required for interacting with the Starknet blockchain. First import the ethclient `go-ethereum` Ethereum package and initialize it by calling `Dial` which accepts a provider URL.
 
 You can use any public endpoint of your choosing to connect to the Starknet blockchain. For convenience, Nethermind has provided some public endpoints which we will use here. Alternatively, you can sign up to a Infura to get access to the Starknet network.
 
 
 ```go
-client, err := ethclient.DialContext("https://limited-rpc.nethermind.io/mainnet-juno")
+client, err := ethclient.Dial("https://limited-rpc.nethermind.io/mainnet-juno")
 ```
 
 Using the ethclient is a necessary thing you'll need to start with for every Starknet.go project and you'll be seeing this step a lot throughout this book.
@@ -35,6 +35,7 @@ import (
 	"log"
 
 	ethrpc "github.com/ethereum/go-ethereum/rpc"
+    rpc "github.com/NethermindEth/starknet.go/rpc"
 )
 
 var (
@@ -42,11 +43,11 @@ var (
 )
 
 func main() {
-	
-	client, err := ethrpc.DialContext(context.Background(), endpoint)
+ethClient, err := ethrpc.Dial(endpoint)
 	if err != nil {
 		log.Fatal(err)
 	}
+	client:=rpc.NewProvider(ethClient)
 	fmt.Println("We have connected to:"+ endpoint)
 	_ = client  // We will use this in later sections
 }
