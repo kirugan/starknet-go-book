@@ -34,23 +34,21 @@ The e-book is avaiable in different formats.
 * [Introduction](en/README.md)
 * [Client](en/client/README.md)
   * [Setting up the Client](en/client-setup/README.md)
+* [Felts](en/felts/README.md)
+  * [Using felts](en/using-felts/README.md)
 * [Accounts](en/accounts/README.md)
-  * [Account Balances](en/account-balance/README.md)
-  * [Account Token Balances](en/account-balance-token/README.md)
-  * [Generating New Wallets](en/wallet-generate/README.md)
-  * [Keystores](en/keystore/README.md)
-  * [HD Wallets](en/hd-wallet/README.md)
-  * [Address Check](en/address-check/README.md)
+  * [Account Balances](en/account-balance-token/README.md)
+  * [Generating New Public-Private Keys](en/wallet-generate/README.md)
+  * [Generating New Keystores](en/keystore/README.md)
 * [Transactions](en/transactions/README.md)
   * [Querying Blocks](en/block-query/README.md)
   * [Querying Transactions](en/transaction-query/README.md)
-  * [Transferring ETH](en/transfer-eth/README.md)
   * [Transferring Tokens](en/transfer-tokens/README.md)
   * [Subscribing to New Blocks](en/block-subscribe/README.md)
   * [Create Raw Transaction](en/transaction-raw-create/README.md)
   * [Send Raw Transaction](en/transaction-raw-send/README.md)
 * [Smart Contracts](en/smart-contracts/README.md)
-  * [Smart Contract Compilation & ABI](en/smart-contract-compile/README.md)
+  * [Smart Contract Compilation &amp; ABI](en/smart-contract-compile/README.md)
   * [Deploying a Smart Contract](en/smart-contract-deploy/README.md)
   * [Loading a Smart Contract](en/smart-contract-load/README.md)
   * [Querying a Smart Contract](en/smart-contract-read/README.md)
@@ -61,13 +59,11 @@ The e-book is avaiable in different formats.
   * [Subscribing to Event Logs](en/event-subscribe/README.md)
   * [Reading Event Logs](en/event-read/README.md)
   * [Reading ERC-20 Token Event Logs](en/event-read-erc20/README.md)
-  * [Reading 0x Protocol Event Logs](en/event-read-0xprotocol/README.md)
 * [Signatures](en/signatures/README.md)
   * [Generating Signatures](en/signature-generate/README.md)
   * [Verifying Signatures](en/signature-verify/README.md)
 * [Testing](en/test/README.md)
   * [Faucets](en/faucets/README.md)
-  * [Using a Simulated Client](en/client-simulated/README.md)
 * [Swarm](en/swarm/README.md)
   * [Setting Up Swarm](en/swarm-setup/README.md)
   * [Uploading Files to Swarm](en/swarm-upload/README.md)
@@ -85,7 +81,6 @@ The e-book is avaiable in different formats.
 ## Help & Support
 
 - Join the [#ethereum](https://gophers.slack.com/messages/C9HP1S9V2/) channel on the [gophers slack](https://invite.slack.golangbridge.org/) for Go (golang) help
-
 - The [Ethereum StackExchange](https://ethereum.stackexchange.com/) is a great place to ask general Ethereum question and Go specific questions
 
 ## Development
@@ -125,13 +120,9 @@ If updating code examples:
 If wanting to add a new translation, follow these instructions:
 
 1. Set up [development environment](#development)
-
 2. Add language to `LANGS.md`
-
 3. Copy the the `en` directory and rename it with the 2 letter language code of the language you're translating to (e.g. `zh`)
-
 4. Translate content
-
 5. Set `"root"` to `"./"` in `book.json` if not already set
 
 ## Thanks
