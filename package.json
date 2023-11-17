@@ -1,7 +1,7 @@
 {
-  "name": "ethereum-development-with-go",
+  "name": "starknet-development-with-go",
   "version": "1.0.0",
-  "description": "> A little book on [Ethereum](https://www.ethereum.org/) Development with [Go](https://golang.org/) (golang)",
+  "description": "> A little book on [Starknet](https://www.starknet.io/) Development with [Go](https://golang.org/) (golang)",
   "main": "index.js",
   "dependencies": {
     "canvas": "^1.6.11",
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/miguelmota/ethereum-development-with-go-book.git"
+    "url": "git+https://github.com/kirugan/starknet-go-book.git"
   },
   "author": {
     "name": "Miguel Mota",

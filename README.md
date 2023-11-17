@@ -3,9 +3,9 @@
 </p>
 <br>
 
-# Ethereum Development with Go
+# Starknet Development with Go
 
-> A little guide book on [Ethereum](https://www.ethereum.org/) Development with [Go](https://golang.org/) (golang)
+> A little guide book on [Starknet](https://www.starknet.io/) Development with [Go](https://golang.org/) (golang)
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/merkletreejs/master/LICENSE)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
@@ -13,7 +13,7 @@
 
 ## Online
 
-[https://goethereumbook.org](https://goethereumbook.org/)
+[https://gostarknetbook.org](https://gostarknetbook.org/)
 
 ## E-book
 
@@ -26,7 +26,7 @@ The e-book is avaiable in different formats.
 ## Languages
 
 * [English](en/)
-* [Chinese中文](zh/)
+* [Russian (todo)](ru/)
 
 ## Contents
 
@@ -135,12 +135,10 @@ If wanting to add a new translation, follow these instructions:
 
 ## Thanks
 
-Thanks to [@qbig](https://github.com/qbig) and [@gzuhlwang](https://github.com/gzuhlwang) for the Chinese translation.
-
-And thanks to all the [contributors](https://github.com/miguelmota/ethereum-development-with-go-book/graphs/contributors) who have contributed to this guide book.
+Todo
 
 ## License
 
 Released under the [CC0-1.0](./LICENSE) license.
 
-© [Miguel Mota](https://github.com/miguelmota)
+© todo

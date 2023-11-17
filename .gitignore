@@ -11,6 +11,7 @@ sandbox.go
 sandbox*.go
 tmp/
 build/
+.idea/
 
 .ecrecover.go
 
