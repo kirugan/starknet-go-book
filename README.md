@@ -1,5 +1,6 @@
 <p align="center">
-  <a href="https://goethereumbook.org"><img src="https://github.com/miguelmota/ethereum-development-with-go-book/raw/master/assets/cover.jpg" width="320" alt="Book cover" /></a>
+  <a href="https://gostarknetbook.org">
+  <img src="https://github.com/kirugan/starknet-go-book/raw/main/assets/cover.jpg" width="320" alt="Book cover" /></a>
 </p>
 <br>
 
