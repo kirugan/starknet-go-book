@@ -1,0 +1,56 @@
+{
+  "root": "./",
+  "title": "Ethereum Development with Go",
+  "description": "A little book on getting started with Ethereum development using Go (Golang). Learn how to interact with smart contract contract, subscribe to blockchain events, verify signatures, and much more.",
+  "author": "Miguel Mota",
+  "isbn": "",
+  "language": "en",
+  "direction": "ltr",
+  "gitbook": ">= 3.0.0",
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "plugins": [
+    "meta"
+  ],
+  "pluginsConfig": {
+    "analytics": {
+      "google": "UA-39494276-11"
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
+    },
+    "autocover": {
+      "font": {
+        "size": null,
+        "family": "Impact",
+        "color": "#FFF"
+      },
+      "size": {
+        "w": 1800,
+        "h": 2360
+      },
+      "background": {
+        "color": "#09F"
+      }
+    },
+    "meta": {
+      "data": [
+        {
+          "name": "keywords",
+          "content": "ethereum, go, golang, development, examples, tutorial, explained, guide, help, reference, stackoverflow, blockchain, smart contracts, swarm, whisper, deploy, erc-20, tokens, coins, eth, gopher, ethereum go book, go ethereum book, ethereum golang, ethereum golang tutorial, golang ethereum tutorial, ethereum golang guide, golang ethereum guide, golang interact smart contracts"
+        },
+        {
+          "name": "googlebot",
+          "content": "index,follow"
+        },
+        {
+          "name": "application-name",
+          "content": "Go Ethereum"
+        }
+      ]
+    }
+  }
+}
