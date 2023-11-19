@@ -9,7 +9,6 @@
 > A little guide book on [Starknet](https://www.starknet.io/) Development with [Go](https://golang.org/) (golang)
 
 [![License](http://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/miguelmota/merkletreejs/master/LICENSE)
-[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#contributing)
 
 ## Online
@@ -20,9 +19,9 @@
 
 The e-book is avaiable in different formats.
 
-- [PDF](https://goethereumbook.org/ethereum-development-with-go.pdf)
-- [EPUB](https://goethereumbook.org/ethereum-development-with-go.epub)
-- [MOBI](https://goethereumbook.org/ethereum-development-with-go.mobi)
+- [PDF (todo)]
+- [EPUB (todo)]
+- [MOBI (todo)]
 
 ## Languages
 
@@ -34,56 +33,48 @@ The e-book is avaiable in different formats.
 * [Introduction](en/README.md)
 * [Client](en/client/README.md)
   * [Setting up the Client](en/client-setup/README.md)
-* [Felts](en/felts/README.md)
-  * [Using felts](en/using-felts/README.md)
-* [Accounts](en/accounts/README.md)
-  * [Account Balances](en/account-balance-token/README.md)
-  * [Generating New Public-Private Keys](en/wallet-generate/README.md)
-  * [Generating New Keystores](en/keystore/README.md)
-* [Transactions](en/transactions/README.md)
-  * [Querying Blocks](en/block-query/README.md)
-  * [Querying Transactions](en/transaction-query/README.md)
-  * [Transferring Tokens](en/transfer-tokens/README.md)
-  * [Subscribing to New Blocks](en/block-subscribe/README.md)
-  * [Create Raw Transaction](en/transaction-raw-create/README.md)
-  * [Send Raw Transaction](en/transaction-raw-send/README.md)
-* [Smart Contracts](en/smart-contracts/README.md)
-  * [Smart Contract Compilation &amp; ABI](en/smart-contract-compile/README.md)
-  * [Deploying a Smart Contract](en/smart-contract-deploy/README.md)
-  * [Loading a Smart Contract](en/smart-contract-load/README.md)
-  * [Querying a Smart Contract](en/smart-contract-read/README.md)
-  * [Writing to a Smart Contract](en/smart-contract-write/README.md)
-  * [Reading Smart Contract Bytecode](en/smart-contract-bytecode/README.md)
-  * [Querying an ERC20 Token Smart Contract](en/smart-contract-read-erc20/README.md)
-* [Event Logs](en/events/README.md)
-  * [Subscribing to Event Logs](en/event-subscribe/README.md)
-  * [Reading Event Logs](en/event-read/README.md)
-  * [Reading ERC-20 Token Event Logs](en/event-read-erc20/README.md)
-* [Signatures](en/signatures/README.md)
-  * [Generating Signatures](en/signature-generate/README.md)
-  * [Verifying Signatures](en/signature-verify/README.md)
-* [Testing](en/test/README.md)
-  * [Faucets](en/faucets/README.md)
-* [Swarm](en/swarm/README.md)
-  * [Setting Up Swarm](en/swarm-setup/README.md)
-  * [Uploading Files to Swarm](en/swarm-upload/README.md)
-  * [Download Files From Swarm](en/swarm-download/README.md)
-* [Whisper](en/whisper/README.md)
-  * [Connecting Whisper Client](en/whisper-client/README.md)
-  * [Generating Whisper Key Pair](en/whisper-keys/README.md)
-  * [Sending Messages on Whisper](en/whisper-send/README.md)
-  * [Subscribing to Whisper Messages](en/whisper-subscribe/README.md)
-* [Utilities](en/util/README.md)
-  * [Collection of Utility Functions](en/util-go/README.md)
-* [Glossary](en/GLOSSARY.md)
-* [Resources](en/resources/README.md)
+* Felts
+  * Using felts
+* Accounts
+  * Account Balances
+  * Generating New Public-Private Keys
+  * Generating New Keystores
+* Transactions
+  * Querying Blocks
+  * Querying Transactions
+  * Transferring Tokens
+  * Subscribing to New Blocks
+  * Create Raw Transaction
+  * Send Raw Transaction
+* Smart Contracts
+  * Smart Contract Compilation &amp; ABI
+  * Deploying a Smart Contract
+  * Loading a Smart Contract
+  * Querying a Smart Contract
+  * Writing to a Smart Contract
+  * Reading Smart Contract Bytecode
+  * Querying an ERC20 Token Smart Contract
+* Event Logs
+  * Subscribing to Event Logs
+  * Reading Event Logs
+  * Reading ERC-20 Token Event Logs
+* Signatures
+  * Generating Signatures](en/signature-generate/README.md)
+  * Verifying Signatures
+* Testing
+  * Faucets
+* Utilities
+  * Collection of Utility Functions
+* Glossary
+* Resources
 
 ## Help & Support
 
-- Join the [#ethereum](https://gophers.slack.com/messages/C9HP1S9V2/) channel on the [gophers slack](https://invite.slack.golangbridge.org/) for Go (golang) help
-- The [Ethereum StackExchange](https://ethereum.stackexchange.com/) is a great place to ask general Ethereum question and Go specific questions
+We recommend checking out Starknets official [online-communities web page](https://www.starknet.io/en/community/online-communities), where you can get help and interact with Starknet communities all around the world. The Starknet [documentation](https://docs.starknet.io/documentation/) is also a great place to get a better understanding of how the Starknet blockchain functions.
 
 ## Development
+
+todo
 
 Install dependencies:
 
@@ -127,7 +118,9 @@ If wanting to add a new translation, follow these instructions:
 
 ## Thanks
 
-Todo
+This book takes heavy inspiration from the amazing [ethereum-development-with-go-book](https://github.com/miguelmota/ethereum-development-with-go-book). We highly recommend checking out this book if you're interested in learning how to interact with the Ethereum blockchain.
+
+Todo.
 
 ## License
 
