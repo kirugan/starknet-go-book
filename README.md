@@ -125,5 +125,4 @@ Todo.
 ## License
 
 Released under the [CC0-1.0](./LICENSE) license.
-
 © todo
