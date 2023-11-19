@@ -4,15 +4,20 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ethereum/go-ethereum/ethclient"
+	rpc "github.com/NethermindEth/starknet.go/rpc"
+	ethrpc "github.com/ethereum/go-ethereum/rpc"
 )
 
-func main() {
-	client, err := ethclient.Dial("https://cloudflare-eth.com")
+var (
+	endpoint = "https://limited-rpc.nethermind.io/mainnet-juno"
+)
+
+func main() {	
+	ethClient, err := ethrpc.Dial(endpoint)
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	fmt.Println("we have a connection")
-	_ = client
+	client:=rpc.NewProvider(ethClient)
+	fmt.Println("We have connected to:"+ endpoint)
+	_ = client  // We will use this in later sections
 }

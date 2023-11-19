@@ -1,81 +1,54 @@
 ---
-description: Tutorial on how to set up a client to connect to Ethereum with Go.
+description: Tutorial on how to set up a client to connect to Starknet with Golang.
 ---
 
 # Setting up the Client
 
-Setting up the Ethereum client in Go is a fundamental step required for interacting with the blockchain. First import the `ethclient` go-ethereum package and initialize it by calling `Dial` which accepts a provider URL.
+Setting up the client in Golang is a fundamental step required for interacting with the Starknet blockchain. First import the ethclient `go-ethereum` Ethereum package and initialize it by calling `Dial` which accepts a provider URL.
 
-You can connect to the infura gateway if you don't have an existing client. Infura manages a bunch of Ethereum [geth and parity] nodes that are secure, reliable, scalable and lowers the barrier to entry for newcomers when it comes to plugging into the Ethereum network.
+You can use any public endpoint of your choosing to connect to the Starknet blockchain. For convenience, Nethermind has provided some public endpoints which we will use here. Alternatively, you can sign up to a Infura to get access to the Starknet network.
 
-```go
-client, err := ethclient.Dial("https://cloudflare-eth.com")
-```
-
-You may also pass the path to the IPC endpoint file if you have a local instance of geth running.
 
 ```go
-client, err := ethclient.Dial("/home/user/.ethereum/geth.ipc")
+client, err := ethclient.Dial("https://limited-rpc.nethermind.io/mainnet-juno")
 ```
 
-Using the ethclient is a necessary thing you'll need to start with for every Go Ethereum project and you'll be seeing this step a lot throughout this book.
+Using the ethclient is a necessary thing you'll need to start with for every Starknet.go project and you'll be seeing this step a lot throughout this book.
 
-## Using Ganache
+## Using Starknet-devnet
 
-[Ganache](https://github.com/trufflesuite/ganache-cli) (formally known as *testrpc*) is an Ethereum implementation written in Node.js meant for testing purposes while developing dapps locally. Here we'll walk you through how to install it and connect to it.
+[Starknet-devnet](https://github.com/0xSpaceShard/starknet-devnet) allows you to run a local starknet-testnet. If you are familiar with Ganache, it serves a similar purpose but for the Starknet blockchain.
 
-First install ganache via [NPM](https://www.npmjs.com/package/ganache-cli).
-
-```bash
-npm install -g ganache-cli
-```
-
-Then run the ganache CLI client.
-
-```bash
-ganache-cli
-```
-
-Now connect to the ganache RPC host on `http://localhost:8545`.
-
-```go
-client, err := ethclient.Dial("http://localhost:8545")
-if err != nil {
-  log.Fatal(err)
-}
-```
-
-You may also use the same mnemonic when starting ganache to generate the same sequence of public addresses.
-
-```bash
-ganache-cli -m "much repair shock carbon improve miss forget sock include bullet interest solution"
-```
-
-I highly recommend getting familiar with ganache by reading their [documentation](http://truffleframework.com/ganache/).
 
 ---
 
 ### Full code
 
-[client.go](https://github.com/miguelmota/ethereum-development-with-go-book/blob/master/code/client.go)
+[client.go](https://github.com/kirugan/starknet-go-book/client.go)
 
 ```go
 package main
 
 import (
+	"context"
 	"fmt"
 	"log"
 
-	"github.com/ethereum/go-ethereum/ethclient"
+	ethrpc "github.com/ethereum/go-ethereum/rpc"
+    rpc "github.com/NethermindEth/starknet.go/rpc"
+)
+
+var (
+	endpoint = "https://limited-rpc.nethermind.io/mainnet-juno"
 )
 
 func main() {
-	client, err := ethclient.Dial("https://cloudflare-eth.com")
+ethClient, err := ethrpc.Dial(endpoint)
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	fmt.Println("we have a connection")
-	_ = client // we'll use this in the upcoming sections
+	client:=rpc.NewProvider(ethClient)
+	fmt.Println("We have connected to:"+ endpoint)
+	_ = client  // We will use this in later sections
 }
 ```
