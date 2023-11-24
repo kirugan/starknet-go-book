@@ -96,6 +96,18 @@ make ebooks
 
 Visit [http://localhost:4000](http://localhost:4000)
 
+## Gitbook issues
+
+How to fix the following error:
+```javascript
+if (cb) cb.apply(this, arguments)
+                 ^
+
+TypeError: cb.apply is not a function
+```
+
+Apply this [fix](https://flaviocopes.com/cb-apply-not-a-function/)
+
 ## Contributing
 
 Pull requests are welcome!

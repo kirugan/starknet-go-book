@@ -31,43 +31,43 @@ deploy-all: build ebooks ebooks-cp deploy
 
 .PHONY: ebooks-cp
 ebooks-cp:
-	cp ethereum-development-with-go* _book
+	cp starknet-development-with-go* _book
 
 .PHONY: ebooks
 ebooks: pdf epub mobi
 
 .PHONY: pdf
-pdf: pdf-en pdf-zh
+pdf: pdf-en pdf-ru
 
 .PHONY: pdf-en
 pdf-en:
-	gitbook pdf ./en ethereum-development-with-go.pdf
+	gitbook pdf ./en starknet-development-with-go.pdf
 
-.PHONY: pdf-zh
-pdf-zh:
-	gitbook pdf ./zh ethereum-development-with-go-zh.pdf
+.PHONY: pdf-ru
+pdf-ru:
+	gitbook pdf ./ru starknet-development-with-go-ru.pdf
 
 .PHONY: epub
-epub: epub-en epub-zh
+epub: epub-en epub-ru
 
 .PHONY: epub-en
 epub-en:
-	gitbook epub ./en ethereum-development-with-go.epub
+	gitbook epub ./en starknet-development-with-go.epub
 
-.PHONY: epub-zh
-epub-zh:
-	gitbook epub ./zh ethereum-development-with-go-zh.epub
+.PHONY: epub-ru
+epub-ru:
+	gitbook epub ./ru starknet-development-with-go-ru.epub
 
 .PHONY: mobi
-mobi: mobi-en mobi-zh
+mobi: mobi-en mobi-ru
 
 .PHONY: mobi-en
 mobi-en:
-	gitbook mobi ./en ethereum-development-with-go.mobi
+	gitbook mobi ./en starknet-development-with-go.mobi
 
-.PHONY: mobi-zh
-mobi-zh:
-	gitbook mobi ./zh ethereum-development-with-go-zh.mobi
+.PHONY: mobi-ru
+mobi-ru:
+	gitbook mobi ./ru starknet-development-with-go-ru.mobi
 
 .PHONY: plugins-install
 plugins-install:

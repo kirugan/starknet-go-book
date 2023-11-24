@@ -2,7 +2,7 @@
   "root": "./",
   "title": "Starknet Development with Go",
   "description": "A little book on getting started with Starknet development using Go (Golang). Learn how to interact with smart contract contract, subscribe to blockchain events, verify signatures, and much more.",
-  "author": "Miguel Mota",
+  "author": "",
   "isbn": "",
   "language": "en",
   "direction": "ltr",
@@ -15,7 +15,7 @@
   ],
   "pluginsConfig": {
     "analytics": {
-      "google": "UA-39494276-11"
+      "google": ""
     },
     "fontsettings": {
       "theme": "white",
